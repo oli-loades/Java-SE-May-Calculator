@@ -25,5 +25,13 @@ public class CalculatorTest {
 		Assert.assertEquals(60, calc.multiply(10,6));
 		Assert.assertEquals(0, calc.multiply(10,0));	
 	}
+	
+	@Test
+	public void divideTest() {
+		Calculator calc = new Calculator();
+		Assert.assertEquals(2, calc.divide(10,5));
+		Assert.assertEquals(10, calc.divide(10,0));	
+		Assert.assertEquals(0, calc.divide(5,10));	
+	}
 
 }
