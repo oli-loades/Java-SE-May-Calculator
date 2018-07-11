@@ -1,25 +1,25 @@
 package com.qa.calculator;
 
 public class Calculator {
-	private  iAlgorithm  algorithm;
+	private iAlgorithm algorithm;
 
-	public Calculator(iAlgorithm  algorithm) {
+	public Calculator(iAlgorithm algorithm) {
 		this.algorithm = algorithm;
 	}
 
-	public int add(int num1, int num2) {
+	public int calc(int num1, int num2) {
 		return algorithm.calc(num1, num2);
 	}
 
-	public int subtract(int num1, int num2) {
+	public double calc(double num1, double num2) {
 		return algorithm.calc(num1, num2);
 	}
 
-	public int multiply(int num1, int num2) {
-		return algorithm.calc(num1, num2);
+	public iAlgorithm getAlgorithm() {
+		return algorithm;
 	}
 
-	public int divide(int num1, int num2) {
-		return algorithm.calc(num1, num2);
+	public void setAlgorithm(iAlgorithm algorithm) {
+		this.algorithm = algorithm;
 	}
 }
