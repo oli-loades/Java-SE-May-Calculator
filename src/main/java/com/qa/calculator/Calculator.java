@@ -3,10 +3,12 @@ package com.qa.calculator;
 public class Calculator {
 	private Add add;
 	private Subtract subtract;
+	private Multiply multiply;
 	
 	public Calculator() {
 		add = new Add();
 		subtract = new Subtract();
+		multiply = new Multiply();
 	}
 	
 	public int add(int num1, int num2) {
@@ -18,6 +20,6 @@ public class Calculator {
 	}
 	
 	public int multiply(int num1, int num2) {
-		return num1*num2;
+		return multiply.multiply(num1, num2);
 	}
 }
