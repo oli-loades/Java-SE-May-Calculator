@@ -22,4 +22,14 @@ public class Calculator {
 	public int multiply(int num1, int num2) {
 		return multiply.multiply(num1, num2);
 	}
+
+	public int divide(int num1, int num2) {
+		int result;
+			try {
+				result = num1/num2;
+			}catch(ArithmeticException ae) {
+				result = num1/(num2+1);
+			}
+		return result;
+	}
 }
